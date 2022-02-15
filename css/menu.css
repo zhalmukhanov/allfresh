@@ -1,0 +1,664 @@
+.menu {
+    margin-top: 100px;
+}
+.menu_container {
+    margin-top: 40px;
+
+    
+}
+
+/* .tabcontent{
+    
+    animation-name: openMenu;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+} */
+/* @keyframes openMenu {
+    0% {
+        opacity: 0;
+        /* transform: translateY(-50%) translateX(-15%) scaleX(70%) scaleY(0);
+    }
+} */
+
+/* @media (max-width: 768px) {
+    @keyframes openMenu {
+        0% {
+            opacity: 0;
+            transform: translateY(-50%) scaleY(0) ;
+        }
+    }
+}  */
+.menu_top{
+    display: flex;
+}
+.menu_selectors {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.empty{
+    width: 30%;
+}
+.tablink {
+    /* padding: 15px 3.21%; */
+    padding: 15px 0;
+    text-align: center;
+    flex-grow:1;
+
+    border-bottom:  3px solid #65AE45;
+    border-top:  3px solid #ffffff;
+
+    font-weight: 500;
+    font-size: 16px;
+    color: #424242;
+
+    cursor: pointer;
+}
+
+.type2{
+    display: none;
+}
+.tablink:hover {
+    border-bottom:  3px solid #E8E8E8;
+    border-top:  3px solid #424242;
+    background-color: #E8E8E8;
+}
+.tablink_active{
+    cursor:default;
+    border-bottom:  3px solid #E8F0E4;
+    border-top:  3px solid #65AE45;
+    background-color: #E8F0E4;
+}
+
+.tablink_active:hover{
+    border-bottom:  3px solid #E8F0E4;
+    border-top:  3px solid #65AE45;
+    background-color: #E8F0E4;
+}
+.menu_content {
+    display: flex;
+}
+.menu_main {
+    width: 70%;
+    background-color: #E8F0E4;  
+}
+
+.menu_wrapper{
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding: 0 15px;
+}
+.card_container{
+    flex: 0 1 33.3333%;
+    display: flex;
+    justify-content: center;
+}
+.menu_card {
+    max-width: 250px;
+    margin: 0 15px;
+    margin-top: 40px;
+}
+
+.menu_img {
+    max-width: 100%;
+}
+.menu_title {
+    margin-top: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    font-weight: 500;
+    font-size: 20px;
+    color: #65AE45;
+}
+.menu_title span{
+    font-weight: normal;
+    font-size: 12px;
+
+}
+.menu_description {
+    margin-top: 20px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 119%;
+    color: #424242;
+}
+.menu_info {
+    width: 30%;
+    background: #424242;
+}
+.info_title {
+    margin-top: 50px;
+    padding: 12px 25px 12px 25px;
+
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+    background-color: #65AE45;
+}
+.info_content {
+    padding: 0 25px;
+
+}
+.food_value {
+    margin-top: 45px;
+
+    border: 3px solid #ffffff; 
+    padding: 25px;
+
+}
+.info_calorie {
+    font-weight: 500;
+    font-size: 28px;
+
+    color: #65AE45;
+
+}
+.info_calorie span{
+    font-weight: 300;
+    font-size: 14px;
+
+    color: #FFFFFF;
+}
+.info_line {
+    width: 100%;
+    height: 0.5px;
+    background-color: #fff;
+
+    margin: 15px 0;
+}
+.info_addition {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.addition_element {
+    font-weight: 500;
+    font-size: 20px;
+
+    color: #65AE45;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addition_element span{
+    font-weight: 300;
+    font-size: 12px;
+
+    color: #FFFFFF;
+}
+.info_description {
+    margin-top: 25px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 153.19%;
+
+    color: #FFFFFF;
+}
+.info_btn {
+    margin: 50px 0;
+    padding: 8px 20px;
+    background-color: #65AE45;
+
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.info_btn:hover {
+    background-color: #ffffff;
+    color: #65AE45;
+}
+
+@media (max-width: 1024px){
+    .menu_container {
+        margin-top: 3.91vw;
+    }
+    .tablink {
+        padding: 1.465vw 0;
+        font-size: 1.563vw;
+    }
+    .menu_main {
+        width: 70%; 
+    }
+    
+    .menu_wrapper{
+        margin-bottom: 3.906vw;
+        padding: 0 1.465vw;
+    }
+    .menu_card {
+        max-width: 24.414vw;
+        margin:1.465vw;
+        margin-top: 3.906vw;
+    }
+    
+    .menu_title {
+        margin-top: 2.441vw;
+        font-size: 1.953vw;
+    }
+    .menu_title span{
+        font-size: 1.172vw;
+    
+    }
+    .menu_description {
+        margin-top: 1.953vw;
+    
+        font-size:  1.563vw ;
+    }
+    .menu_info {
+        width: 30%;
+    }
+    .info_title {
+        margin-top: 4.883vw;
+        padding: 1.172vw 2.441vw 1.172vw 2.441vw;
+    
+        font-size: 2.344vw;
+    }
+    .info_content {
+        padding: 0 2.441vw;
+    
+    }
+    .food_value {
+        margin-top: 4.395vw;
+    
+        padding: 2.441vw;
+    
+    }
+    .info_calorie {
+        font-size: 2.734vw;
+    
+    }
+    .info_calorie span{
+        font-size: 1.367vw;
+    }
+    .info_line {
+        height: 0.0.049vw;
+    
+        margin: 1.465vw 0;
+    }
+    .addition_element {
+        font-size: 1.953vw;
+    }
+    
+    .addition_element span{
+        font-size: 1.172vw;
+    }
+    .info_description {
+        margin-top: 2.441vw;
+        font-size: 1.563vw;
+    }
+    .info_btn {
+        margin: 4.883vw 0;
+        padding: 0.781vw 1.953vw;
+    
+        font-size: 2.344vw;
+    }
+}
+
+@media (max-width: 768px){
+    .menu {
+        margin-top: 70px;
+    }
+    .menu_container {
+        margin-top: 40px;
+    }
+    .menu_selectors {
+        width: 100%;
+    }
+    .empty{
+        display: none;
+    }
+    .type1{
+        display: none;
+    }
+    .type2{
+        display: block;
+    }
+    .tablink {
+        padding: 15px 0;
+        text-align: center;
+        flex-grow:1;
+    
+        font-size: 20px;
+    }
+    .menu_content {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu_main {
+        width: 100%;
+    }
+    
+    .menu_wrapper{
+        margin-bottom: 40px;
+        padding: 0 15px;
+    }
+    .card_container{
+        flex: 0 1 50%;
+    }
+    .menu_card {
+        max-width: 250px;
+        margin: 0 15px;
+        margin-top: 40px;
+    }
+    
+    .menu_title {
+        margin-top: 25px;
+    
+        font-size: 20px;
+    }
+    .menu_title span{
+        font-size: 12px;
+    
+    }
+    .menu_description {
+        margin-top: 20px;
+    
+        font-size: 16px;
+        line-height: 119%;
+    }
+    .menu_info {
+        width: 100%;
+    }
+    .info_title {
+        margin-top: 30px;
+        padding: 12px 25px 12px 25px;
+    
+        font-size: 26px;
+    }
+    .info_content {
+        padding: 0 25px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .food_value {
+        flex: 0 1 30%;
+        margin-top: 40px;
+    
+        padding: 25px;
+    
+    }
+    .info_calorie {
+        font-weight: 500;
+        font-size: 28px;
+    
+    
+    }
+    .info_calorie span{
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+    .info_line {
+        height: 0.5px;
+        margin: 15px 0;
+    }
+    .info_addition {
+        width: 100%;
+    }
+    .addition_element {
+        font-size: 20px;
+    }
+    
+    .addition_element span{
+        font-size: 12px;
+    
+    }
+    .info_description {
+        margin-top: 40px;
+        font-size: 16px;
+        display: inline;
+    
+        flex: 0 1 55%;
+        color: #FFFFFF;
+        
+    }
+    .info_btn {
+        flex: 0 1 50%;
+        margin: 50px auto;
+        padding: 8px 20px;
+    
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 600px){
+    .menu {
+        margin-top: 50px;
+    }
+    .menu_container {
+        margin-top: 5vw;
+    }
+    .tablink {
+        padding: 2.500vw 0;
+        text-align: center;
+        flex-grow:1;
+
+        font-size: 3.333vw;
+        
+    }   
+    
+    .menu_wrapper{
+        margin-bottom: 6.667vw;
+        padding: 0 2.500vw;
+    }
+    .card_container{
+        flex: 0 1 50%;
+    }
+    .menu_card {
+        max-width: 41.667vw;
+        margin: 0 2.500vw;
+        margin-top: 6.667vw;
+    }
+    
+    .menu_title {
+        margin-top: 4.167vw;
+    
+        font-size: 3.333vw;
+    }
+    .menu_title span{
+        font-size: 2vw;
+    
+    }
+    .menu_description {
+        margin-top: 3.333vw;
+    
+        font-size: 2.667vw;
+    }
+    .menu_info {
+        width: 100%;
+    }
+    .info_title {
+        margin-top: 30px;
+        padding: 2vw 4.167vw 2vw 4.167vw;
+    
+        font-size: 4.333vw;
+    }
+    .info_content {
+        padding: 0 4.167vw;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .food_value {
+        flex: 0 1 30%;
+        margin-top: 6.667vw;
+    
+        padding: 4.167vw;
+    
+    }
+    .info_calorie {
+        font-size: 4.667vw;    
+    }
+    .info_calorie span{
+        font-size: 2.333vw;
+        color: #FFFFFF;
+    }
+    .info_line {
+        height: 0.5px;
+        margin: 2.500vw 0;
+    }
+
+    .addition_element {
+        font-size: 3.333vw;
+    }
+    
+    .addition_element span{
+        font-size: 2vw;
+    
+    }
+    .info_description {
+        margin-top: 6.667vw;
+        font-size: 2.667vw;
+        display: inline;
+    
+        flex: 0 1 55%;
+        color: #FFFFFF;
+        
+    }
+    .info_btn {
+        flex: 0 1 50%;
+        margin: 8.333vw auto;
+        padding: 1.333vw 3.333vw;
+    
+        font-size: 4vw;
+    }
+}
+
+
+@media (max-width: 320px){
+    .menu {
+        margin-top: 70px;
+    }
+    .menu_container {
+        margin-top: 20px;
+    }
+    .menu_selectors {
+        width: 100%;
+    }
+    .empty{
+        display: none;
+    }
+    .type1{
+        display: none;
+    }
+    .type2{
+        display: block;
+    }
+    .tablink {
+        padding: 13px 0;
+        text-align: center;
+        flex-grow:1;
+    
+        font-size: 15px;
+    }
+    .menu_content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .menu_wrapper{
+        margin-bottom: 20px;
+        padding: 0 15px;
+    }
+    .card_container{
+        flex: 0 1 100%;
+    }
+    .menu_card {
+        max-width: 250px;
+        margin: 0 5px;
+        margin-top: 30px;
+    }
+    
+    .menu_title {
+        margin-top: 20px;
+    
+        font-size: 20px;
+    }
+    .menu_title span{
+        font-size: 12px;
+    
+    }
+    .menu_description {
+        margin-top: 20px;
+    
+        font-size: 16px;
+    }
+    .menu_info {
+        width: 100%;
+    }
+    .info_title {
+        margin-top: 30px;
+        padding: 12px 25px 12px 25px;
+    
+        font-size: 26px;
+    }
+    .info_content {
+        padding: 0 20px;
+
+        display: flex;
+        flex-direction: column;
+    }
+    .food_value {
+        flex: 0 1 100%;
+        margin-top: 40px;
+    
+        padding: 20px;
+    
+    }
+    .info_calorie {
+        font-weight: 500;
+        font-size: 28px;
+    
+    
+    }
+    .info_calorie span{
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+    .info_line {
+        height: 0.5px;
+        margin: 15px 0;
+    }
+    .info_addition {
+        width: 100%;
+    }
+    .addition_element {
+        font-size: 20px;
+    }
+    
+    .addition_element span{
+        font-size: 12px;
+    
+    }
+    .info_description {
+        margin-top: 40px;
+        font-size: 16px;
+        display: inline;
+    
+        flex: 0 1 100%;
+        color: #FFFFFF;
+        
+    }
+    .info_btn {
+        flex: 0 1 100%;
+        margin: 50px 0;
+        padding: 8px 20px;
+    
+        font-size: 24px;
+    }
+}

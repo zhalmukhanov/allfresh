@@ -1,0 +1,74 @@
+/*==================================
+               Banner
+====================================*/
+
+.banner {
+    display: block;
+    margin-top: 80px;
+    background: url(../img/main_bg.jpg) 50% 50%/cover no-repeat;
+    height: 600px;
+}
+.banner_container {
+}
+.banner_title {
+    padding-top: 120px;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 120%;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 40px #000000;
+}
+.banner_text {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.banner_btn {
+    display:inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+
+    margin-top: 75px;
+    padding: 12px 15px;
+    background-color: #65AE45;
+    transition: all 0.15s ease-in;
+}
+
+.banner_btn:hover {
+    color: #65AE45;
+    background-color: #ffffff;
+}
+@media (max-width: 1024px) {
+    .banner {
+        height: 500px;
+    }
+    .banner_title {
+        padding-top: 80px;
+    }
+} 
+@media (max-width: 768px) {
+    .banner {
+        height: 400px;
+        margin-top: 60px;
+    }
+    .banner_title {
+        padding-top: 50px;
+        font-size: 45px;
+    }
+
+    .banner_btn {
+        font-size: 16px;
+    
+        margin-top: 75px;
+        padding: 10px 13px;
+    }
+} 
+@media (max-width: 425px) {
+    .banner_title {
+        padding-top: 50px;
+        font-size: 11vw;
+    }
+} 

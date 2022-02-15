@@ -1,0 +1,133 @@
+.footer {
+    margin-top: 100px;
+    background-color: #424242;
+
+}
+
+.footer_container {
+    
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer_logo_container{
+    text-decoration: none;
+    align-self:flex-start;
+}
+.footer_logo {
+    width: 175px;
+}
+.footer_items {
+    flex: 1 1 auto;
+
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 118%;
+}
+.footer_email {
+    margin-bottom: 10px;
+}
+.footer_phone {
+    
+
+    text-decoration: none;
+    color: #ffffff;
+}
+.footer_phone:hover {
+    color: #c4c4c4;
+    text-decoration: underline;
+}
+.footer_copy {
+    margin-top: 10px;
+}
+.footer_social {
+}
+.footer_social_element {
+    text-decoration: none;
+
+    margin-right: 25px;
+}
+
+.footer_social_element:hover.footer_social_element svg path {
+    fill: #c4c4c4;
+}
+.footer_social_element:last-child {
+    text-decoration: none;
+    margin-right: 0;
+}
+
+
+@media (max-width: 1024px){
+    .footer_container {
+        
+        padding: 5.859vw 0;
+        display: flex;
+        align-items: center;
+    }
+    
+    .footer_logo {
+        width: 17.090vw;
+    }
+    .footer_items {
+        font-size: 1.563vw;
+    }
+    .footer_email {
+        margin-bottom: 0.977vw;
+    }
+    .footer_copy {
+        margin-top: 0.977vw;
+    }
+    .footer_social_element {
+        margin-right: 2.441vw;
+    }
+    
+    .footer_social_element svg {
+        height: 4.102vw;
+        width: 4.102vw;
+    }
+}
+
+@media (max-width: 768px){
+    .footer {
+        margin-top: 70px;
+    
+    }
+    .footer_container {
+        
+        padding: 40px 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer_logo_container{
+        align-self: auto;
+        margin-bottom: 40px;
+    }
+    .footer_logo {
+        width: 130px;
+    }
+    .footer_items {
+        margin-top: 40px;
+        font-size: 14px;
+        order:3;
+    }
+    .footer_email {
+        margin-bottom: 10px;
+    }
+    .footer_copy {
+        margin-top: 20px;
+    }
+    .footer_social_element svg {
+        height: 35px;
+        width: 35px;
+    }
+    .footer_social_element {
+        margin-right: 20px;
+    }
+    
+    .footer_social_element:hover.footer_social_element svg {
+        height: 42px;
+    }
+}

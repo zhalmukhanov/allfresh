@@ -1,0 +1,321 @@
+.popup{
+    display: none;
+}
+.popup.popup_active {
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(36, 36, 36, 0.884);
+    position: fixed;
+    top: 0;
+
+    animation-name: openPopup;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@keyframes openPopup {
+    0% {
+        display: none;
+      opacity: 0;
+      visibility: hidden;
+    }
+    100% {
+        display: flex;
+      opacity: 1;
+      visibility: visible;
+    }
+}
+
+.popup_container {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 50px;
+}
+.popup_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.popup_title {
+    font-weight: 500;
+    font-size: 32px;
+
+    color: #65AE45;
+}
+
+.popup-btn{
+    padding: 10px;
+    cursor: pointer;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form_name {
+    font-weight: 300;
+    font-size: 18px;
+
+    color: #424242;
+    margin-bottom: 10px;
+}
+.form_phone{
+    font-weight: 300;
+    font-size: 18px;
+
+    color: #424242;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.input_name, 
+.input_name:focus,
+.input_name:active {
+    max-width: 100%;
+    display: inline-block;
+    height: 45px;
+    border-radius: 0;
+    border: 1px solid #424242;
+    padding-left: 10px;
+
+    font-size: 20px;
+    color: #424242;
+}
+
+.input_phone,
+.input_phone:focus,
+.input_phone:active{
+    width: 100%;
+    display: inline-block;
+    height: 45px;
+    border-radius: 0;
+    border: 1px solid #424242;
+    padding-left: 10px;
+
+    font-size: 20px;
+    color: #424242;
+}
+
+.invalid_message{
+    font-weight: 300;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #c00202;
+}
+.call_me {
+    margin-top: 80px;
+    font-weight: 500;
+    font-size: 25px;
+
+    color: #FFFFFF;
+    background-color: #65AE45;
+    padding: 15px 0;
+    border: none;
+    transition: all 0.3s ease 0s;
+
+}
+.whatsapp {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 25px;
+
+    color: #FFFFFF;
+    background-color: #65AE45;
+    padding: 15px 0;
+    border: none;
+    transition: all 0.3s ease 0s;
+
+}
+
+.call_me:hover,
+.whatsapp:hover{
+    color: #ececec;
+    background-color: #57a038;
+    box-shadow: 3px 6px 13px rgba(0, 0, 0, 0.25);
+}
+
+.popup_thanks{
+    width: 450px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #ffffff;
+    padding: 50px;
+    padding-top: 0px;
+}
+.popup_thanks .popup-btn{
+    align-self:flex-end;
+    position: relative;
+    left: 30px;
+    top: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+.popup_text{
+    margin-top: 15px;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #424242;
+}
+
+
+
+@media (max-width: 768px){
+    .popup{
+        z-index: 5;
+        display: block;
+        position: fixed;
+        right: -200%;
+        top: 0;
+        transition: all 0.6s ease-out 0s;
+    }
+    .thanks_active {
+        transition: all 0s ease-out 0s;
+        
+    }
+    .popup.popup_active {
+        right: 0;
+
+        animation-name: none;
+        transition: all 0.3s ease-out 0s;
+    }
+    
+    .popup_container {
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .popup_top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 50px;
+    }
+    .popup_title {
+        font-weight: 500;
+        font-size: 28px;
+    }
+    
+    .popup-btn{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        
+    }
+
+    .popup_thanks{
+        width: 450px;
+        margin: 0 30px;
+    
+        background-color: #ffffff;
+        padding: 40px;
+        padding-top: 0px;
+    }
+}
+
+@media (max-width: 320px){
+    .popup_title {
+        font-size: 25px;
+    }
+    
+    .popup-btn{
+        top: 15px;
+        right: 15px;
+    }
+    .form_name {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+    .form_phone{
+        font-size: 15px;
+    
+        margin-bottom: 8px;
+        margin-top: 30px;
+    }
+    
+    
+    .input_name, 
+    .input_name:focus,
+    .input_name:active {
+        height: 30px;
+        padding-left: 8px;
+    
+        font-size: 15px;
+    }
+    
+    .input_phone,
+    .input_phone:focus,
+    .input_phone:active{
+        width: 100%;
+        height: 34px;
+        padding-left: 8px;
+    
+        font-size: 15px;
+    }
+
+    .iti--separate-dial-code .iti__selected-dial-code {
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        color: #424242;
+        margin-right: 3px;
+      }
+    .call_me {
+        font-size: 20px;
+        padding: 15px 0;
+    
+    }
+    .whatsapp {
+        margin-top: 20px;
+        font-size: 20px;
+        padding: 15px 0;    
+    }
+
+
+        
+    .popup_thanks{
+        width: 450px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        background-color: #ffffff;
+        padding: 20px;
+        padding-top: 0px;
+    }
+    .popup_thanks .popup-btn{
+        align-self:flex-end;
+        position: relative;
+        left: 15px;
+        top: 7px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .popup_text{
+        margin-top: 15px;
+        font-size: 18px;
+        line-height: 118%;
+    
+        color: #424242;
+    }
+
+}
