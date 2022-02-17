@@ -33,7 +33,7 @@ function openDayMenu(pageName, element){
     element.classList.add('tablink_active');
 }
 
-document.getElementById('defaultOpen').click();
+// document.getElementById('defaultOpen').click();
 
 
 
@@ -131,7 +131,7 @@ function sendWhats(){
     popupMenu();
 
     let nameVal = name.value ;
-    const phoneNumber = "77086267795";
+    const phoneNumber = "77051611222";
 
     let message = '';
 

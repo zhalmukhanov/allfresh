@@ -83,3 +83,47 @@ img, video {
         font-size: 30px;
     }
 } 
+
+.main_btn{
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 25px 0;
+    /* border-radius: 5px; */
+
+    background-color: #65AE45;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    transition: all 0.10s ease-in;
+    
+    -webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate ;
+	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate ;
+}
+
+.main_btn:hover{
+    background-color: #529435;
+    color: rgb(255, 255, 255);
+}
+
+
+@media (max-width: 768px) {
+    .main_btn{
+        margin-top: 70px;
+    }
+} 
+
+@media (max-width: 425px) {
+    .main_btn{
+        max-width: 250px;
+        margin-top: 50px;
+        padding: 25px;
+
+        font-size: 22px;
+    }
+} 

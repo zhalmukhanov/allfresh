@@ -30,19 +30,28 @@
 
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
 
-    padding: 65px 0;
+    padding-bottom: 65px;
 }
 .whyUs_item {
+    margin: 0 20px;
+    margin-top: 65px;
+    flex: 0 1 25%;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+.whyUs_item svg{
+    transform: scale(1.2);
+}
+
 .whyUs_item_title {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 19px;
     color: #424242;
+    text-align: center;
 
     margin-top: 30px;
 }
@@ -83,10 +92,13 @@
 @media (max-width: 768px) {
     .whyUs_items {
         flex-wrap: wrap;
-        padding: 55px 0;
+        justify-content: space-around;
+        padding-top: 0;
     }
     .whyUs_item {
-        flex: 0 1 50%;
+        flex: 0 1 30%;
+        margin-left: 30px;
+        margin-right: 30px;
     }
     .whyUs_item_icon{
         transform: scale(1);
@@ -111,10 +123,11 @@
 @media (max-width: 600px) {
     .whyUs_items {
         flex-wrap: wrap;
-        padding: 9vw 0;
     }
     .whyUs_item {
-        flex: 0 1 50%;
+        flex: 0 1 40%;
+        margin-left: 3vw;
+        margin-right: 3vw;
     }
     .whyUs_item_icon{
         height: 16vw;
@@ -146,13 +159,17 @@
 
     .whyUs_items {
         flex-wrap: wrap;
-        padding: 55px 0;
+        padding-bottom: 50px;
+        justify-content: space-around;
     }
     .whyUs_item {
-        flex: 0 1 50%;
+        margin-top: 55px;
+        margin-left: 0;
+        margin-right: 0;
+        flex: 0 1 45%;
     }
     .whyUs_item_icon{
-        height: 68px;
+        height: 60px;
     }
     .whyUs_item_title {
         font-size: 12px;
@@ -168,21 +185,25 @@
 
     .whyUs_item:nth-child(3),
     .whyUs_item:nth-child(4) {
-        margin-top: 35px;
+        margin-top: 50px;
     }
 }
 @media (max-width: 320px) {
     .whyUs_items {
         flex-wrap: wrap;
-        padding: 55px 0;
-        padding-bottom: 5px;
+        padding-bottom: 50px;
     }
-
+    .whyUs_item{
+        margin-top: 50px;
+    }
     .whyUs_item_title {
         font-size: 19px;    
         margin-top: 30px;
     }
     
+    .whyUs_item_icon{
+        height: 80px;
+    }
     .whyUs_item_text {
         width: 168px;
         font-size: 15px;
@@ -191,11 +212,10 @@
     }
     .whyUs_item:nth-child(3),
     .whyUs_item:nth-child(4){
-        margin-top: 0px;
+        margin-top: 50px;
     }
     .whyUs_item {
         flex: 0 1 100%;
-        margin-bottom: 40px;
     }
 
 }
