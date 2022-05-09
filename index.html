@@ -7,44 +7,26 @@
     <title>AllFresh</title>
 
     <link rel="shortcut icon" href="img/LogoEmblem.ico">
-    <!-- FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    
+
     <!-- CSS -->
-    <link rel="stylesheet" href="css/start-style.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/banner.css">
-    <link rel="stylesheet" href="css/why_us.css">
-    <link rel="stylesheet" href="css/calorie.css">
-    <link rel="stylesheet" href="css/about.css">
-
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/intlTelInput.css">
-    <link rel="stylesheet" href="css//popup.css">
-    <link rel="stylesheet" href="css/slider.css">
-    <link rel="stylesheet" href="css/review.css">
-    <link rel="stylesheet" href="css/video_block.css">
-    <link rel="stylesheet" href="css/footer.css">
-    
-
+    <link rel="stylesheet" href="css/style.css">
+    <!-- slider -->
     <script src="js/lib/slider.js"></script>
-
 
 </head>
 <body>
     <header class="header">
         <div class="wrapper">
             <div class="headder_container">
-                <a href="index.html">
-                    <img  src="img/Logo.png" class="header_logo" alt="AllFresh logo">
+                <a href="index.html" class="header_logo">
+                    <img  src="img/Logo.png" width="117" height="45" alt="AllFresh logo">
                 </a>
 
                 <div class="header_links">
                     <ul class="link_item">
                         <li><a href="#about" class="link_items">O нас</a></li>
                         <li><a href="#calorie" class="link_items">Программы</a></li>
+                        <li><a href="#reviews" class="link_items">Отзывы</a></li>
                         <li><a href="tel:+77051611222" class="link_items">+7 (705) 161 12 22</a></li>
                     </ul>
 
@@ -60,13 +42,6 @@
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="15" cy="15" r="15" fill="#65AE45"/>
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M10.904 5H19.5603C22.8119 5 25.4643 7.63017 25.4643 10.8263V19.4604C25.4643 22.6677 22.8119 25.2867 19.5603 25.2867H10.904C7.65237 25.2867 5 22.6677 5 19.4604V10.8263C5 7.61908 7.66347 5 10.904 5ZM15.1767 9.67217C18.3395 9.67217 20.9031 12.2358 20.9031 15.3986C20.9031 18.5615 18.3395 21.1251 15.1767 21.1251C12.0138 21.1251 9.45021 18.5615 9.45021 15.3986C9.45021 12.2358 12.0138 9.67217 15.1767 9.67217ZM15.1767 11.6032C17.263 11.6032 18.961 13.3011 18.961 15.3875C18.961 17.4739 17.263 19.1719 15.1767 19.1719C13.0792 19.1719 11.3923 17.4739 11.3923 15.3875C11.3923 13.3011 13.0903 11.6032 15.1767 11.6032ZM20.7145 8.87313C21.225 8.87313 21.6467 9.28374 21.6467 9.80534C21.6467 10.3158 21.2361 10.7376 20.7145 10.7376C20.204 10.7376 19.7822 10.3269 19.7822 9.80534C19.7822 9.29484 20.1929 8.87313 20.7145 8.87313ZM11.6143 6.65357H18.85C21.569 6.65357 23.7885 8.86203 23.7885 11.5699V18.85C23.7885 21.5579 21.569 23.7663 18.85 23.7663H11.6143C8.89532 23.7663 6.67577 21.5579 6.67577 18.85V11.5699C6.67577 8.86203 8.89532 6.65357 11.6143 6.65357Z" fill="white"/>
-                            </svg>
-                        </a>
-
-                        <a href="https://www.youtube.com/" target="_blank" class="social_element">
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="15" cy="15" r="15" fill="#65AE45"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.7856 10.2355C24.7856 10.2355 24.5927 8.76067 23.9925 8.12043C23.2315 7.27439 22.3741 7.26296 21.9882 7.21723C19.1908 7 15 7 15 7H14.9893C14.9893 7 10.7878 7 8.00107 7.21723C7.61522 7.26296 6.75777 7.27439 5.99678 8.12043C5.39657 8.76067 5.20364 10.2355 5.20364 10.2355C5.20364 10.2355 5 11.9619 5 13.6883V15.3003C5 17.0267 5.20364 18.753 5.20364 18.753C5.20364 18.753 5.39657 20.2279 5.99678 20.8681C6.75777 21.7142 7.75456 21.6913 8.20472 21.7828C9.80171 21.9428 15 22 15 22C15 22 19.2015 21.9886 21.9989 21.7828C22.3848 21.737 23.2422 21.7256 24.0032 20.8796C24.6034 20.2393 24.7964 18.7645 24.7964 18.7645C24.7964 18.7645 25 17.0381 25 15.3117V13.6997C25 11.9733 24.7964 10.247 24.7964 10.247L24.7856 10.2355ZM12.9207 17.2668V11.2759L18.3226 14.2828L12.9207 17.2668Z" fill="white"/>
                             </svg>
                         </a>
                     </div>
@@ -85,7 +60,8 @@
                         <div class="burger_links">
                             <a href="#about" class="navbar_item" onclick="openMenu()">O нас</a>
                             <a href="#calorie" class="navbar_item" onclick="openMenu()">Программы</a>
-                            <a href="tel:+71234567890" class="navbar_item">+7 (123) 456 78 90</a>
+                            <a href="#reviews" class="navbar_item" onclick="openMenu()">Отзывы</a>
+                            <a href="tel:+71234567890" class="navbar_item">+7 (705) 161 12 22</a>
                         </div>
 
                         <div class="header_social">
@@ -103,12 +79,6 @@
                                 </svg>
                             </a>
     
-                            <a href="https://www.youtube.com/" target="_blank" class="social_element">
-                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="15" cy="15" r="15" fill="#65AE45"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.7856 10.2355C24.7856 10.2355 24.5927 8.76067 23.9925 8.12043C23.2315 7.27439 22.3741 7.26296 21.9882 7.21723C19.1908 7 15 7 15 7H14.9893C14.9893 7 10.7878 7 8.00107 7.21723C7.61522 7.26296 6.75777 7.27439 5.99678 8.12043C5.39657 8.76067 5.20364 10.2355 5.20364 10.2355C5.20364 10.2355 5 11.9619 5 13.6883V15.3003C5 17.0267 5.20364 18.753 5.20364 18.753C5.20364 18.753 5.39657 20.2279 5.99678 20.8681C6.75777 21.7142 7.75456 21.6913 8.20472 21.7828C9.80171 21.9428 15 22 15 22C15 22 19.2015 21.9886 21.9989 21.7828C22.3848 21.737 23.2422 21.7256 24.0032 20.8796C24.6034 20.2393 24.7964 18.7645 24.7964 18.7645C24.7964 18.7645 25 17.0381 25 15.3117V13.6997C25 11.9733 24.7964 10.247 24.7964 10.247L24.7856 10.2355ZM12.9207 17.2668V11.2759L18.3226 14.2828L12.9207 17.2668Z" fill="white"/>
-                                </svg>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -119,7 +89,9 @@
     <section class="banner">
         <div class="wrapper">
             <div class="banner_container">
-                <img src="img/Logo2.png" alt="logo" class="banner__logo">
+                <div class="banner__logo">
+                    <img src="img/Logo2.png" width="312" height="115" alt="logo">
+                </div>
                 <h1 class="banner_title">Построй своё тело мечты вместе с нами.</h1>
                 <div class="banner_btn" onclick="popupMenu()">Заказать меню</div>
             </div>
@@ -129,7 +101,7 @@
     <section class="whyUs" >
         <div class="wrapper">
             <div class="whyUs_container">
-                <p class="section_name whyUs_title">Почему мы?</p>
+                <h2 class="section_name whyUs_title">Почему мы?</h2>
 
                 <div class="whyUs_items">
                     <div class="whyUs_item">
@@ -190,111 +162,100 @@
                         </svg>
                         <h2  class="whyUs_item_title">Доставка каждый день</h2>
                     </div>
+
+                    <div class="whyUs_item">
+                        <svg width="108" height="90" viewBox="0 0 108 90" class="whyUs_item_icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M90.0003 24.8403H102.715C101.18 26.5394 98.7214 28.4404 95.4001 28.4404H92.7001C91.7047 28.4404 90.9002 29.2468 90.9002 30.2403C90.9002 31.2338 91.7047 32.0403 92.7001 32.0403H95.4001C103.617 32.0403 107.644 24.1797 107.811 23.8449C108.09 23.287 108.06 22.6244 107.732 22.0935C107.403 21.5642 106.825 21.2402 106.2 21.2402H90.0001C89.0047 21.2402 88.2002 22.0467 88.2002 23.0402C88.2002 24.0339 89.0049 24.8403 90.0003 24.8403Z" fill="#65AE45"/>
+                            <path d="M74.9049 42.4801C73.7236 42.4801 72.7689 43.4478 72.7689 44.64C72.7689 60.1231 60.3118 72.7202 45.0008 72.7202C29.6898 72.7202 17.2323 60.1233 17.2323 44.6403C17.2323 29.1573 29.6895 16.5601 45.0005 16.5601C46.1817 16.5601 47.1364 15.5924 47.1364 14.4002C47.1364 13.2079 46.1817 12.2402 45.0005 12.2402C27.3335 12.2402 12.9602 26.7751 12.9602 44.6405C12.9602 62.506 27.3335 77.0409 45.0005 77.0409C62.6675 77.0409 77.0408 62.506 77.0408 44.6405C77.0408 43.4478 76.0861 42.4801 74.9049 42.4801Z" fill="#65AE45"/>
+                            <path d="M52.6531 17.8797C61.7028 20.5699 68.7096 27.5794 71.404 36.6256C71.6806 37.5558 72.5316 38.1604 73.4575 38.1604C73.6589 38.1604 73.8646 38.1305 74.0684 38.0705C75.2022 37.7319 75.8495 36.5379 75.5109 35.4039C72.405 24.9624 64.3156 16.8767 53.8751 13.7708C52.7412 13.4299 51.5473 14.0815 51.2108 15.2134C50.8717 16.3471 51.519 17.5411 52.6531 17.8797Z" fill="#65AE45"/>
+                            <path d="M106.2 75.2402H82.8001C81.8047 75.2402 81.0002 76.0467 81.0002 77.0402C81.0002 78.0337 81.8047 78.8401 82.8001 78.8401H102.715C101.18 80.5392 98.7213 82.4402 95.4001 82.4402H77.4001C77.0455 82.4402 76.6962 82.5463 76.4011 82.7427L71.4546 86.0402H68.4C67.4046 86.0402 66.6001 86.8467 66.6001 87.8402C66.6001 88.8337 67.4046 89.6401 68.4 89.6401H72.0001C72.3547 89.6401 72.7038 89.534 72.9991 89.3376L77.9456 86.04H95.4003C103.617 86.04 107.644 78.1794 107.811 77.8447C108.09 77.2868 108.06 76.6242 107.732 76.0933C107.403 75.5642 106.825 75.2402 106.2 75.2402Z" fill="#65AE45"/>
+                            <path d="M106.2 39.2402H94.5001C93.5047 39.2402 92.7002 40.0467 92.7002 41.0402C92.7002 42.0337 93.5047 42.8401 94.5001 42.8401H102.715C101.18 44.5392 98.7212 46.4402 95.4 46.4402H94.5001C93.5047 46.4402 92.7002 47.2466 92.7002 48.2401C92.7002 49.2336 93.5047 50.04 94.5001 50.04H95.4002C103.617 50.04 107.644 42.1794 107.811 41.8447C108.09 41.2868 108.06 40.6242 107.732 40.0933C107.403 39.5642 106.825 39.2402 106.2 39.2402Z" fill="#65AE45"/>
+                            <path d="M106.2 57.2402H92.7003C91.7049 57.2402 90.9004 58.0467 90.9004 59.0402C90.9004 60.0337 91.7049 60.8401 92.7003 60.8401H102.715C101.18 62.5392 98.7214 64.4402 95.4001 64.4402H90.0001C89.0047 64.4402 88.2002 65.2466 88.2002 66.2401C88.2002 67.2336 89.0047 68.04 90.0001 68.04H95.4001C103.617 68.04 107.644 60.1794 107.811 59.8447C108.09 59.2868 108.06 58.6242 107.732 58.0933C107.403 57.5642 106.825 57.2402 106.2 57.2402Z" fill="#65AE45"/>
+                            <path d="M90.0002 45C90.0002 20.187 69.8133 0 45.0002 0C20.1872 0 0 20.187 0 45C0 69.813 20.187 90 45 90C69.8131 90 90.0002 69.813 90.0002 45ZM45 86.3999C22.1706 86.3999 3.59987 67.8275 3.59987 44.9998C3.59987 22.1721 22.1706 3.59987 45 3.59987C67.8294 3.59987 86.4002 22.1723 86.4002 45C86.4002 67.8277 67.8296 86.3999 45 86.3999Z" fill="#65AE45"/>
+                            <path d="M44.0562 57.6349C46.0016 57.8724 47.8889 57.7348 49.6312 57.223C54.5425 55.7802 58.3321 51.5016 59.2294 45.1886C60.1047 39.0386 55.0397 29.094 51.9667 23.7496C51.7102 23.3036 51.2018 23.0656 50.6952 23.1546C50.1884 23.2433 49.7908 23.6398 49.7017 24.1467C49.067 27.7538 46.6299 33.1095 38.4451 37.4803C32.0201 41.491 32.6484 50.085 37.3292 54.6163C37.2684 54.6678 37.2078 54.704 37.1465 54.7611C31.8061 59.8234 30.9689 64.5893 31.0701 67.3959C31.078 67.6166 31.2463 67.7984 31.4657 67.8231C31.6852 67.8478 31.8895 67.7083 31.9469 67.495C32.645 64.8877 34.4164 60.6396 38.888 56.7888C41.2763 54.7322 48.0734 47.7028 50.3316 41.0242C50.3837 40.8701 50.5399 40.7765 50.7005 40.8036C50.8607 40.8305 50.9778 40.9701 50.9768 41.1327C50.9157 49.2579 45.0096 56.5611 44.0562 57.6349Z" fill="#65AE45"/>
+                        </svg>
+                        <h2  class="whyUs_item_title">Полностью ЭКО посуда</h2>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <a name="calorie" class="anchor">
+    <a id="calorie" class="anchor">
         <p style="padding-top: 20px; margin-top: -20px;"></p>
     </a>
     <section class="calorie">
         <div class="wrapper">
             <div class="calorie_container">
-                <p class="section_name">Программы</p>
-                <div class="calorie_cards col-3">
-                    <div class="calorie_cards_col">
+                <div class="calorie_cards">
+                    <div class="card_container">
                         <div class="calorie_card card_1" onclick="openFull('card_1')">
 
                             <div class="calorie_card_top">
                                 <p class="calorie_value">900 <span class="calorie_value_L">Ккал</span></p>
-                                <img src="img/menu_1.JPG" alt="menu" class="calorie_card_img">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/menu_1.jpg" alt="menu" class="calorie_card_img lazy">
                             </div>
     
                             <div class="calorie_card_content">
                                 <p class="calorie_text">Программа для стремительного снижения веса с упором на белковую пищу и практически полное исключение простых углеводов. За 1 месяц ты сможешь похудеть до 8 кг. Рацион состоит из 5 блюд в день. Первый день примерного меню</p>
                                 <div class="calorie_card_line"></div>
-                                <p class="calorie_price">1 день - <span>6.000</span> тг</p>
-                                <p class="calorie_price">7 дней - <span>38.500</span> тг</p>
-                                <p class="calorie_price">21 день - <span>105.000</span> тг</p>
-                            </div>
-                            
-                            <div class="calorie_card_bottom">
-                                <div class="full_btn">
-                                    <svg width="36" height="17" viewBox="0 0 36 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M33.1968 14L18 2L2.80329 14" stroke="white" stroke-width="3" stroke-linecap="square"/>
-                                    </svg>
+                                <div class="calorie_price">
+                                    <p>1 день</p>
+                                    <div class="calorie_price_line"></div>
+    
+                                    <div class="price">
+                                        <p class="price_day"><span>5.500</span> тг</p>
+                                    </div>
                                 </div>
-                                <div class="calorie_card_bottom_line"></div>
-                            </div>
-                        </div>
-    
-                        <div class="calorie_card card_2" onclick="openFull('card_2')">
 
-                            <div class="calorie_card_top">
-                                <p class="calorie_value">1200 <span class="calorie_value_L">Ккал</span></p>
-                                <img src="img/menu_2.JPG" alt="menu" class="calorie_card_img">
-                            </div>
+                                <div class="calorie_card_line_1"></div>
+
+                                <div class="calorie_price">
+                                    <p>7 дней</p>
+                                    <div class="calorie_price_line"></div>
     
-                            <div class="calorie_card_content">
-                                <p class="calorie_text">Программа с преобладанием белковой пищи и оптимальным уровнем жиров и медленных углеводов (преимущественно для девушек). Ты сможешь похудеть до 5 кг за 30 дней. В рационе предусмотрено 5 приемов пищи.</p>
-                                <div class="calorie_card_line"></div>
-                                <p class="calorie_price">1 день - <span>6.500</span> тг</p>
-                                <p class="calorie_price">7 дней - <span>42.500</span> тг</p>
-                                <p class="calorie_price">21 день - <span>115.000</span> тг</p>
-                            </div>
-                            
-                            <div class="calorie_card_bottom">
-                                <div class="full_btn">
-                                    <svg width="36" height="17" viewBox="0 0 36 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M33.1968 14L18 2L2.80329 14" stroke="white" stroke-width="3" stroke-linecap="square"/>
-                                    </svg>
+                                    <div class="price">
+                                        <p class="price_day"><span>5.000</span> тг/день</p>
+                                        <p class="accent_price"><span>35.000</span> тг</p>
+                                    </div>
                                 </div>
-                                <div class="calorie_card_bottom_line"></div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="calorie_cards_col">
-                        <div class="calorie_card card_3" onclick="openFull('card_3')">
+                                <div class="calorie_card_line_1"></div>
 
-                            <div class="calorie_card_top">
-                                <p class="calorie_value">1500 <span class="calorie_value_L">Ккал</span></p>
-                                <img src="img/menu_3.JPG" alt="menu" class="calorie_card_img">
-                            </div>
+                                <div class="calorie_price">
+                                    <p>14 дней</p>
+                                    <div class="calorie_price_line"></div>
     
-                            <div class="calorie_card_content">
-                                <p class="calorie_text">Универсальная программа для похудения с увеличенным количеством белковой пищи и поддержанием оптимального уровня жиров и углеводов. Девушки смогут сбросить до 5 кг, а мужчина — до 7 кг в месяц. В рационе — 5 приемов пищи.</p>
-                                <div class="calorie_card_line"></div>
-                                <p class="calorie_price">1 день - <span>7.000</span> тг</p>
-                                <p class="calorie_price">7 дней - <span>45.500</span> тг</p>
-                                <p class="calorie_price">21 день - <span>126.000</span> тг</p>
-                            </div>
-                            
-                            <div class="calorie_card_bottom">
-                                <div class="full_btn" >
-                                    <svg width="36" height="17" viewBox="0 0 36 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M33.1968 14L18 2L2.80329 14" stroke="white" stroke-width="3" stroke-linecap="square"/>
-                                    </svg>
+                                    <div class="price">
+                                        <p class="price_day"><span>4.900</span> тг/день</p>
+                                        <p class="accent_price"><span>68.600</span> тг</p>
+                                    </div>
                                 </div>
-                                <div class="calorie_card_bottom_line"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="calorie_card card_4" onclick="openFull('card_4')">
+
+                                <div class="calorie_card_line_1"></div>
+
+                                <div class="calorie_price">
+                                    <p>21 день</p>
+                                    <div class="calorie_price_line"></div>
     
-                            <div class="calorie_card_top">
-                                <p class="calorie_value">1800 <span class="calorie_value_L">Ккал</span></p>
-                                <img src="img/menu_4.JPG" alt="menu" class="calorie_card_img">
-                            </div>
+                                    <div class="price">
+                                        <p class="price_day"><span>4.800</span> тг/день</p>
+                                        <p class="accent_price"><span>100.800</span> тг</p>
+                                    </div>
+                                </div>
+
+                                <div class="calorie_card_line_1"></div>
+
+                                <div class="calorie_price">
+                                    <p>28 дней</p>
+                                    <div class="calorie_price_line"></div>
     
-                            <div class="calorie_card_content">
-                                <p class="calorie_text">Равное соотношение белков и углеводов и оптимальное количество жиров помогает поддерживать вес, улучшить состояние здоровья и нормализовать обмен веществ. Рацион рассчитан на 5 приемов пищи в день.</p>
-                                <div class="calorie_card_line"></div>
-                                <p class="calorie_price">1 день - <span>7.500</span> тг</p>
-                                <p class="calorie_price">7 дней - <span>49.000</span> тг</p>
-                                <p class="calorie_price">21 день - <span>136.500</span> тг</p>
+                                    <div class="price">
+                                        <p class="price_day"><span>4.600</span> тг/день</p>
+                                        <p class="accent_price"><span>128.800</span> тг</p>
+                                    </div>
+                                </div>
                             </div>
                             
                             <div class="calorie_card_bottom">
@@ -307,102 +268,74 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="calorie_cards_col">
-                        <div class="calorie_card card_5" onclick="openFull('card_5')">
-    
-                            <div class="calorie_card_top">
-                                <p class="calorie_value">2000 <span class="calorie_value_L">Ккал</span></p>
-                                <img src="img/menu_5.JPG" alt="menu" class="calorie_card_img">
-                            </div>
-    
-                            <div class="calorie_card_content">
-                                <p class="calorie_text">Сбалансированный рацион для поддержания формы. Комфортное питание для людей с сидячей работой. В рационе 5 приемов пищи на день.</p>
-                                <div class="calorie_card_line"></div>
-                                <p class="calorie_price">1 день - <span>8.000</span> тг</p>
-                                <p class="calorie_price">7 дней - <span>52.500</span> тг</p>
-                                <p class="calorie_price">21 день - <span>147.000</span> тг</p>
-                            </div>
-                            
-                            <div class="calorie_card_bottom">
-                                <div class="full_btn">
-                                    <svg width="36" height="17" viewBox="0 0 36 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M33.1968 14L18 2L2.80329 14" stroke="white" stroke-width="3" stroke-linecap="square"/>
-                                    </svg>
-                                </div>
-                                <div class="calorie_card_bottom_line"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="calorie_card card_6" onclick="openFull('card_6')">
-    
-                            <div class="calorie_card_top">
-                                <p class="calorie_value">2500 <span class="calorie_value_L">Ккал</span></p>
-                                <img src="img/menu_6.JPG" alt="menu" class="calorie_card_img">
-                            </div>
-    
-                            <div class="calorie_card_content">
-                                <p class="calorie_text">Сытный рацион с хорошим содержанием белка: 140 граммов в день. Поддержание формы при физической активности. В рационе 5 приемов пищи на день.</p>
-                                <div class="calorie_card_line"></div>
-                                <p class="calorie_price">1 день - <span>8.500</span> тг</p>
-                                <p class="calorie_price">7 дней - <span>56.000</span> тг</p>
-                                <p class="calorie_price">21 день - <span>157.500</span> тг</p>
-                            </div>
-                            
-                            <div class="calorie_card_bottom">
-                                <div class="full_btn">
-                                    <svg width="36" height="17" viewBox="0 0 36 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M33.1968 14L18 2L2.80329 14" stroke="white" stroke-width="3" stroke-linecap="square"/>
-                                    </svg>
-                                </div>
-                                <div class="calorie_card_bottom_line"></div>
-                            </div>
-                        </div>
-                    </div>
-
                     
-                </div>
-
-                <div class="calorie_cards col-2">
-                    <div class="calorie_cards_col">
-                        <div class="calorie_card card_1" onclick="openFull('card_1')">
-
-                            <div class="calorie_card_top">
-                                <p class="calorie_value">900 <span class="calorie_value_L">Ккал</span></p>
-                                <img src="img/menu_1.JPG" alt="menu" class="calorie_card_img">
-                            </div>
-    
-                            <div class="calorie_card_content">
-                                <p class="calorie_text">Программа для стремительного снижения веса с упором на белковую пищу и практически полное исключение простых углеводов. За 1 месяц ты сможешь похудеть до 8 кг. Рацион состоит из 5 блюд в день. Первый день примерного меню</p>
-                                <div class="calorie_card_line"></div>
-                                <p class="calorie_price">1 день - <span>6.000</span> тг</p>
-                                <p class="calorie_price">7 дней - <span>38.500</span> тг</p>
-                                <p class="calorie_price">21 день - <span>105.000</span> тг</p>
-                            </div>
-                            
-                            <div class="calorie_card_bottom">
-                                <div class="full_btn">
-                                    <svg width="36" height="17" viewBox="0 0 36 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M33.1968 14L18 2L2.80329 14" stroke="white" stroke-width="3" stroke-linecap="square"/>
-                                    </svg>
-                                </div>
-                                <div class="calorie_card_bottom_line"></div>
-                            </div>
-                        </div>
-    
+                    <div class="card_container">
                         <div class="calorie_card card_2" onclick="openFull('card_2')">
 
                             <div class="calorie_card_top">
                                 <p class="calorie_value">1200 <span class="calorie_value_L">Ккал</span></p>
-                                <img src="img/menu_2.JPG" alt="menu" class="calorie_card_img">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/menu_2.jpg" alt="menu" class="calorie_card_img lazy">
                             </div>
     
                             <div class="calorie_card_content">
                                 <p class="calorie_text">Программа с преобладанием белковой пищи и оптимальным уровнем жиров и медленных углеводов (преимущественно для девушек). Ты сможешь похудеть до 5 кг за 30 дней. В рационе предусмотрено 5 приемов пищи.</p>
                                 <div class="calorie_card_line"></div>
-                                <p class="calorie_price">1 день - <span>6.500</span> тг</p>
-                                <p class="calorie_price">7 дней - <span>42.500</span> тг</p>
-                                <p class="calorie_price">21 день - <span>115.000</span> тг</p>
+                                <div class="calorie_price">
+                                    <p>1 день</p>
+                                    <div class="calorie_price_line"></div>
+    
+                                    <div class="price">
+                                        <p class="price_day"><span>6.000</span> тг</p>
+                                    </div>
+                                </div>
+
+                                <div class="calorie_card_line_1"></div>
+
+                                <div class="calorie_price">
+                                    <p>7 дней</p>
+                                    <div class="calorie_price_line"></div>
+    
+                                    <div class="price">
+                                        <p class="price_day"><span>5.500</span> тг/день</p>
+                                        <p class="accent_price"><span>38.500</span> тг</p>
+                                    </div>
+                                </div>
+
+                                <div class="calorie_card_line_1"></div>
+
+                                <div class="calorie_price">
+                                    <p>14 дней</p>
+                                    <div class="calorie_price_line"></div>
+    
+                                    <div class="price">
+                                        <p class="price_day"><span>5.300</span> тг/день</p>
+                                        <p class="accent_price"><span>74.200</span> тг</p>
+                                    </div>
+                                </div>
+
+                                <div class="calorie_card_line_1"></div>
+
+                                <div class="calorie_price">
+                                    <p>21 день</p>
+                                    <div class="calorie_price_line"></div>
+    
+                                    <div class="price">
+                                        <p class="price_day"><span>5.100</span> тг/день</p>
+                                        <p class="accent_price"><span>107.100</span> тг</p>
+                                    </div>
+                                </div>
+
+                                <div class="calorie_card_line_1"></div>
+
+                                <div class="calorie_price">
+                                    <p>28 дней</p>
+                                    <div class="calorie_price_line"></div>
+    
+                                    <div class="price">
+                                        <p class="price_day"><span>4.900</span> тг/день</p>
+                                        <p class="accent_price"><span>137.200</span> тг</p>
+                                    </div>
+                                </div>
                             </div>
                             
                             <div class="calorie_card_bottom">
@@ -414,128 +347,370 @@
                                 <div class="calorie_card_bottom_line"></div>
                             </div>
                         </div>
-
+                    </div>
+                    
+                    <div class="card_container">
                         <div class="calorie_card card_3" onclick="openFull('card_3')">
 
-                            <div class="calorie_card_top">
-                                <p class="calorie_value">1500 <span class="calorie_value_L">Ккал</span></p>
-                                <img src="img/menu_3.JPG" alt="menu" class="calorie_card_img">
+                        <div class="calorie_card_top">
+                            <p class="calorie_value">1400-1600 <span class="calorie_value_L">Ккал</span></p>
+                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/menu_3.jpg" alt="menu" class="calorie_card_img lazy">
+                        </div>
+
+                        <div class="calorie_card_content">
+                            <p class="calorie_text">Универсальная программа для похудения с увеличенным количеством белковой пищи и поддержанием оптимального уровня жиров и углеводов. Девушки смогут сбросить до 5 кг, а мужчина — до 7 кг в месяц. В рационе — 5 приемов пищи.</p>
+                            <div class="calorie_card_line"></div>
+                            <div class="calorie_price">
+                                <p>1 день</p>
+                                <div class="calorie_price_line"></div>
+
+                                <div class="price">
+                                    <p class="price_day"><span>6.200</span> тг</p>
+                                </div>
                             </div>
-    
-                            <div class="calorie_card_content">
-                                <p class="calorie_text">Универсальная программа для похудения с увеличенным количеством белковой пищи и поддержанием оптимального уровня жиров и углеводов. Девушки смогут сбросить до 5 кг, а мужчина — до 7 кг в месяц. В рационе — 5 приемов пищи.</p>
-                                <div class="calorie_card_line"></div>
-                                <p class="calorie_price">1 день - <span>7.000</span> тг</p>
-                                <p class="calorie_price">7 дней - <span>45.500</span> тг</p>
-                                <p class="calorie_price">21 день - <span>126.000</span> тг</p>
+
+                            <div class="calorie_card_line_1"></div>
+
+                            <div class="calorie_price">
+                                <p>7 дней</p>
+                                <div class="calorie_price_line"></div>
+
+                                <div class="price">
+                                    <p class="price_day"><span>5.700</span> тг/день</p>
+                                    <p class="accent_price"><span>39.900</span> тг</p>
+                                </div>
+                            </div>
+
+                            <div class="calorie_card_line_1"></div>
+
+                            <div class="calorie_price">
+                                <p>14 дней</p>
+                                <div class="calorie_price_line"></div>
+
+                                <div class="price">
+                                    <p class="price_day"><span>5.400</span> тг/день</p>
+                                    <p class="accent_price"><span>75.600</span> тг</p>
+                                </div>
                             </div>
                             
-                            <div class="calorie_card_bottom">
-                                <div class="full_btn" >
-                                    <svg width="36" height="17" viewBox="0 0 36 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M33.1968 14L18 2L2.80329 14" stroke="white" stroke-width="3" stroke-linecap="square"/>
-                                    </svg>
-                                </div>
-                                <div class="calorie_card_bottom_line"></div>
-                            </div>
-                        </div>                       
-                    </div>
+                            <div class="calorie_card_line_1"></div>
 
-                    <div class="calorie_cards_col">
+                            <div class="calorie_price">
+                                <p>21 день</p>
+                                <div class="calorie_price_line"></div>
+
+                                <div class="price">
+                                    <p class="price_day"><span>5.200</span> тг/день</p>
+                                    <p class="accent_price"><span>109.200</span> тг</p>
+                                </div>
+                            </div>
+                            
+                            <div class="calorie_card_line_1"></div>
+
+                            <div class="calorie_price">
+                                <p>28 дней</p>
+                                <div class="calorie_price_line"></div>
+
+                                <div class="price">
+                                    <p class="price_day"><span>5.000</span> тг/день</p>
+                                    <p class="accent_price"><span>140.000</span> тг</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="calorie_card_bottom">
+                            <div class="full_btn">
+                                <svg width="36" height="17" viewBox="0 0 36 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M33.1968 14L18 2L2.80329 14" stroke="white" stroke-width="3" stroke-linecap="square"/>
+                                </svg>
+                            </div>
+                            <div class="calorie_card_bottom_line"></div>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card_container">
                         <div class="calorie_card card_4" onclick="openFull('card_4')">
-    
-                            <div class="calorie_card_top">
-                                <p class="calorie_value">1800 <span class="calorie_value_L">Ккал</span></p>
-                                <img src="img/menu_4.JPG" alt="menu" class="calorie_card_img">
-                            </div>
-    
-                            <div class="calorie_card_content">
-                                <p class="calorie_text">Равное соотношение белков и углеводов и оптимальное количество жиров помогает поддерживать вес, улучшить состояние здоровья и нормализовать обмен веществ. Рацион рассчитан на 5 приемов пищи в день.</p>
-                                <div class="calorie_card_line"></div>
-                                <p class="calorie_price">1 день - <span>7.500</span> тг</p>
-                                <p class="calorie_price">7 дней - <span>49.000</span> тг</p>
-                                <p class="calorie_price">21 день - <span>136.500</span> тг</p>
-                            </div>
-                            
-                            <div class="calorie_card_bottom">
-                                <div class="full_btn">
-                                    <svg width="36" height="17" viewBox="0 0 36 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M33.1968 14L18 2L2.80329 14" stroke="white" stroke-width="3" stroke-linecap="square"/>
-                                    </svg>
-                                </div>
-                                <div class="calorie_card_bottom_line"></div>
-                            </div>
+
+                        <div class="calorie_card_top">
+                            <p class="calorie_value">1800-2000 <span class="calorie_value_L">Ккал</span></p>
+                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/menu_5.jpg" alt="menu" class="calorie_card_img lazy">
                         </div>
 
-                        <div class="calorie_card card_5" onclick="openFull('card_5')">
-    
-                            <div class="calorie_card_top">
-                                <p class="calorie_value">2000 <span class="calorie_value_L">Ккал</span></p>
-                                <img src="img/menu_5.JPG" alt="menu" class="calorie_card_img">
+                        <div class="calorie_card_content">
+                            <p class="calorie_text">Сбалансированный рацион для поддержания формы. Комфортное питание для людей с сидячей работой. В рационе 5 приемов пищи на день.</p>
+                            <div class="calorie_card_line"></div>
+                            <div class="calorie_price">
+                                <p>1 день</p>
+                                <div class="calorie_price_line"></div>
+
+                                <div class="price">
+                                    <p class="price_day"><span>6.500</span> тг</p>
+                                </div>
                             </div>
-    
-                            <div class="calorie_card_content">
-                                <p class="calorie_text">Сбалансированный рацион для поддержания формы. Комфортное питание для людей с сидячей работой. В рационе 5 приемов пищи на день.</p>
-                                <div class="calorie_card_line"></div>
-                                <p class="calorie_price">1 день - <span>8.000</span> тг</p>
-                                <p class="calorie_price">7 дней - <span>52.500</span> тг</p>
-                                <p class="calorie_price">21 день - <span>147.000</span> тг</p>
+
+                            <div class="calorie_card_line_1"></div>
+
+                            <div class="calorie_price">
+                                <p>7 дней</p>
+                                <div class="calorie_price_line"></div>
+
+                                <div class="price">
+                                    <p class="price_day"><span>6.000</span> тг/день</p>
+                                    <p class="accent_price"><span>42.000</span> тг</p>
+                                </div>
                             </div>
                             
-                            <div class="calorie_card_bottom">
-                                <div class="full_btn">
-                                    <svg width="36" height="17" viewBox="0 0 36 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M33.1968 14L18 2L2.80329 14" stroke="white" stroke-width="3" stroke-linecap="square"/>
-                                    </svg>
+                            <div class="calorie_card_line_1"></div>
+
+                            <div class="calorie_price">
+                                <p>14 дней</p>
+                                <div class="calorie_price_line"></div>
+
+                                <div class="price">
+                                    <p class="price_day"><span>5.800</span> тг/день</p>
+                                    <p class="accent_price"><span>81.200</span> тг</p>
                                 </div>
-                                <div class="calorie_card_bottom_line"></div>
+                            </div>
+                            
+                            <div class="calorie_card_line_1"></div>
+                            
+                            <div class="calorie_price">
+                                <p>21 день</p>
+                                <div class="calorie_price_line"></div>
+
+                                <div class="price">
+                                    <p class="price_day"><span>5.500</span> тг/день</p>
+                                    <p class="accent_price"><span>115.500</span> тг</p>
+                                </div>
+                            </div>
+                            
+                            <div class="calorie_card_line_1"></div>
+
+                            <div class="calorie_price">
+                                <p>28 дней</p>
+                                <div class="calorie_price_line"></div>
+
+                                <div class="price">
+                                    <p class="price_day"><span>5.300</span> тг/день</p>
+                                    <p class="accent_price"><span>148.400</span> тг</p>
+                                </div>
                             </div>
                         </div>
                         
-                        <div class="calorie_card last_card card_6" onclick="openFull('card_6')">
-    
-                            <div class="calorie_card_top">
-                                <p class="calorie_value">2500 <span class="calorie_value_L">Ккал</span></p>
-                                <img src="img/menu_6.JPG" alt="menu" class="calorie_card_img">
+                        <div class="calorie_card_bottom">
+                            <div class="full_btn">
+                                <svg width="36" height="17" viewBox="0 0 36 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M33.1968 14L18 2L2.80329 14" stroke="white" stroke-width="3" stroke-linecap="square"/>
+                                </svg>
                             </div>
-    
-                            <div class="calorie_card_content">
-                                <p class="calorie_text">Сытный рацион с хорошим содержанием белка: 140 граммов в день. Поддержание формы при физической активности. В рационе 5 приемов пищи на день.</p>
-                                <div class="calorie_card_line"></div>
-                                <p class="calorie_price">1 день - <span>8.500</span> тг</p>
-                                <p class="calorie_price">7 дней - <span>56.000</span> тг</p>
-                                <p class="calorie_price">21 день - <span>157.500</span> тг</p>
-                            </div>
-                            
-                            <div class="calorie_card_bottom">
-                                <div class="full_btn">
-                                    <svg width="36" height="17" viewBox="0 0 36 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M33.1968 14L18 2L2.80329 14" stroke="white" stroke-width="3" stroke-linecap="square"/>
-                                    </svg>
-                                </div>
-                                <div class="calorie_card_bottom_line"></div>
-                            </div>
+                            <div class="calorie_card_bottom_line"></div>
                         </div>
-
+                        </div>
                     </div>
+                    
+                    <div class="card_container">
+                        <div class="calorie_card card_5" onclick="openFull('card_5')">
+
+                        <div class="calorie_card_top">
+                            <p class="calorie_value">2500 <span class="calorie_value_L">Ккал</span></p>
+                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/menu_6.jpg" alt="menu" class="calorie_card_img lazy">
+                        </div>
+
+                        <div class="calorie_card_content">
+                            <p class="calorie_text">Сытный рацион с хорошим содержанием белка: 140 граммов в день. Поддержание формы при физической активности. В рационе 5 приемов пищи на день.</p>
+                            <div class="calorie_card_line"></div>
+                            <div class="calorie_price">
+                                <p>1 день</p>
+                                <div class="calorie_price_line"></div>
+
+                                <div class="price">
+                                    <p class="price_day"><span>7.200</span> тг</p>
+                                </div>
+                            </div>
+
+                            <div class="calorie_card_line_1"></div>
+
+                            <div class="calorie_price">
+                                <p>7 дней</p>
+                                <div class="calorie_price_line"></div>
+
+                                <div class="price">
+                                    <p class="price_day"><span>6.700</span> тг/день</p>
+                                    <p class="accent_price"><span>46.900</span> тг</p>
+                                </div>
+                            </div>
+                            
+                            <div class="calorie_card_line_1"></div>
+                            
+                            <div class="calorie_price">
+                                <p>14 дней</p>
+                                <div class="calorie_price_line"></div>
+
+                                <div class="price">
+                                    <p class="price_day"><span>6.500</span> тг/день</p>
+                                    <p class="accent_price"><span>91.000</span> тг</p>
+                                </div>
+                            </div>
+                            
+                            <div class="calorie_card_line_1"></div>
+
+                            <div class="calorie_price">
+                                <p>21 день</p>
+                                <div class="calorie_price_line"></div>
+
+                                <div class="price">
+                                    <p class="price_day"><span>6.300</span> тг/день</p>
+                                    <p class="accent_price"><span>132.300</span> тг</p>
+                                </div>
+                            </div>
+                            
+                            <div class="calorie_card_line_1"></div>
+                            
+                            <div class="calorie_price">
+                                <p>28 дней</p>
+                                <div class="calorie_price_line"></div>
+
+                                <div class="price">
+                                    <p class="price_day"><span>6.100</span> тг/день</p>
+                                    <p class="accent_price"><span>170.800</span> тг</p>
+                                </div>
+                            </div>
+                        </div>
                         
+                        <div class="calorie_card_bottom">
+                            <div class="full_btn">
+                                <svg width="36" height="17" viewBox="0 0 36 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M33.1968 14L18 2L2.80329 14" stroke="white" stroke-width="3" stroke-linecap="square"/>
+                                </svg>
+                            </div>
+                            <div class="calorie_card_bottom_line"></div>
+                        </div>
+                    </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </section>
 
     <div class="main_btn" onclick="popupMenu()">Хочу заказать меню</div>
+    
+    <a id="reviews" class="anchor">
+    </a>
+    <section class="reviews" >
+        <div class="reviews_top">
+            <div class="reviews_line"></div>
+            <p class="reviews_title">Что говорят наши клиенты</p>
+            <div class="reviews_line"></div>
+        </div>
+        <div class="wrapper">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="review_container">
+                            <div class="review_container-name">
+                                <div class="avatarka">
+                                    <div class="img_container">
+                                        <img src="img/ava.svg" alt="client photo" class="client_ava">                                      
+                                    </div>
+                                </div>
+                                <p class="name-surname">Жанбота <span class="name">балерина</span></p>
+                            </div>
 
-    <a name="about" class="anchor">
+                            <p class="review_container-text">
+                                Здравствуйте.) <br>
+                                Все было отлично мне понравилось.🥰 <br>
+                                Я была восторге от обеда.😍 <br>
+                                Все было очень вкусно и полезно.🥰 <br>
+                                Чувствовала лёгкость🌷
+                            </p>
+                        </div>
+
+                        <div class="review_container">
+                            <div class="review_container-name">
+                                <div class="avatarka">
+                                    <div class="img_container">
+                                        <img src="img/ava.svg" alt="client photo" class="client_ava">                                      
+                                    </div>
+                                </div>
+                                <p class="name-surname">Фируза <span class="name">фитнес тренер</span></span></p>
+                            </div>
+
+                            <p class="review_container-text">
+                                Мне как тренеру важно, чтобы еда была сытной и энергии хватало на весь день. Ваша еда то, что надо: полезно, вкусно и сытно 😍 <br>
+                                Могу без сомнений рекомендовать вас своим подопечным 👍
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review_container">
+                            <div class="review_container-name">
+                                <div class="avatarka">
+                                    <div class="img_container">
+                                        <img src="img/ava.svg" alt="client photo" class="client_ava">                                      
+                                    </div>
+                                </div>
+                                <p class="name-surname">Айдана <span class="name">офисный работник</span></p>
+                            </div>
+
+                            <p class="review_container-text">
+                                Вначале боялась, что буду не наедаться. Оказалось что каллораж который подсчитали мне ребята из All Fresh вполне сытный 🥬. Помимо того, что я наедаюсь, я чувствую лёгкость и цифры на весах только радуют. Никогда раньше не думала что правильное питание может быть столь вкусным 😋. Не могу не отметить вежливость и оперативность персонала 👍
+                            </p>
+                        </div>
+
+                        <!-- <div class="review_container">
+                            <div class="review_container-name">
+                                <div class="avatarka">
+                                    <div class="img_container">
+                                        <img src="img/ava.png" alt="client photo" class="client_ava">                                      
+                                    </div>
+                                </div>
+                                <p class="name-surname">Имя Фамилия</p>
+                            </div>
+
+                            <p class="review_container-text">
+                                Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации систем массового участия. Не следует, однако забывать, что рамки и место обучения кадров способствует подготовки и реализации форм развития.    
+                            </p>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="nav_btns">
+                    <div class="swiper-pagination"></div>
+                    
+                        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg" class="prev_btn">
+                            <circle cx="20.365" cy="20.365" r="20.365" fill="#424242"/>
+                            <path d="M29.5291 20.3649H11.54M11.54 20.3649L17.3985 14.2554M11.54 20.3649L17.3985 26.4743" stroke="white" stroke-width="2"/>
+                        </svg>
+
+                        <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg" class="next_btn">
+                            <circle cx="20.635" cy="20.365" r="20.365" fill="#424242"/>
+                            <path d="M11.8103 20.3649L29.7993 20.3649M29.7993 20.3649L23.9409 26.4744M29.7993 20.3649L23.9409 14.2554" stroke="white" stroke-width="2"/>
+                        </svg>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="reviews_bottom">
+            <div class="reviews_line"></div>
+            <img src="img/LogoWhite.png" alt="white logo" class="reviews_img">
+            <div class="reviews_line"></div>
+        </div>
+    </section>
+
+    <a id="about" class="anchor">
     </a>
     <section class="about">
         <div class="wrapper">
             <div class="about_container">
-                <p class="section_name about__title">О компании</p>
+                <h2 class="section_name about__title">О компании</h2>
                 <div class="about__text">Компания <span>Allfresh</span>  занимается организацией правильного питания с доставкой на дом. Основным приоритетом нашей компании является приготовление полезной,а также вкусной пищи с расчетом рациона на несколько дней или на неделю. Комплексные завтраки, обеды и ужины формируют меню, подходящее для здорового образа жизни. Предлагаемые программы питания подходят как профессиональным спортсменам, так и людям, далеким от спорта, однако стремящимся поддерживать хорошую форму и здоровый организм.</div>
             </div>
         </div>
     </section>
+
+
 
     <div class="popup popup_close">
         <div class="popup_container">
@@ -555,7 +730,7 @@
 
                 <div class="iti iti--allow-dropdown iti--separate-dial-code">
                     <div class="iti__flag-container">
-                        <div class="iti__selected-flag" role="combobox" aria-owns="iti-0__country-listbox" aria-expanded="false" tabindex="0" title="Kazakhstan (Казахстан): +7" aria-activedescendant="iti-0__item-kz">
+                        <div class="iti__selected-flag" role="combobox" aria-expanded="false" tabindex="0" title="Kazakhstan (Казахстан): +7">
                             <div class="iti__flag iti__kz">
 
                             </div>
@@ -588,14 +763,14 @@
     <footer class="footer">
         <div class="wrapper">
             <div class="footer_container">
-                <a href="index.html" class="footer_logo_container">
-                    <img src="img/LogoWhite.png" alt="Logo white" class="footer_logo">
+                <a href="index.html" class="footer_logo_container footer_logo">
+                    <img src="img/LogoWhite.png" width="175" height="64.75" alt="Logo white">
                 </a>
 
                 <div class="footer_items">
                     <p class="footer_email">allfreshkz@gmail.com</p>
                     <a href="tel:+7705161122" class="footer_phone">+7 (705) 161 12 22</a>
-                    <p class="footer_copy">&#169; 2021 AllFresh — правильное питание с доставкой</p>
+                    <p class="footer_copy">&#169; 2022 AllFresh — правильное питание с доставкой</p>
                 </div>
 
                 <div class="footer_social">
@@ -610,16 +785,11 @@
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5208 0C31.8368 0 41.025 9.17584 41.025 20.5042C41.025 31.8202 31.8491 41.0084 20.5208 41.0084C9.20474 41.0084 0.0166016 31.8325 0.0166016 20.5042C0.0166016 9.18814 9.19244 0 20.5208 0ZM15.7238 9.24964H25.3178C28.9217 9.24964 31.8614 12.1648 31.8614 15.7072V25.2766C31.8614 28.8313 28.9217 31.7341 25.3178 31.7341H15.7238C12.1199 31.7341 9.18014 28.8313 9.18014 25.2766V15.7072C9.18014 12.1525 12.1322 9.24964 15.7238 9.24964ZM20.4593 14.428C23.9648 14.428 26.8061 17.2693 26.8061 20.7748C26.8061 24.2803 23.9648 27.1216 20.4593 27.1216C16.9538 27.1216 14.1125 24.2803 14.1125 20.7748C14.1125 17.2693 16.9538 14.428 20.4593 14.428ZM20.4593 16.5682C22.7717 16.5682 24.6536 18.4501 24.6536 20.7625C24.6536 23.0749 22.7717 24.9568 20.4593 24.9568C18.1346 24.9568 16.265 23.0749 16.265 20.7625C16.265 18.4501 18.1469 16.5682 20.4593 16.5682ZM26.597 13.5424C27.1628 13.5424 27.6302 13.9975 27.6302 14.5756C27.6302 15.1414 27.1751 15.6088 26.597 15.6088C26.0312 15.6088 25.5638 15.1537 25.5638 14.5756C25.5638 14.0098 26.0189 13.5424 26.597 13.5424ZM16.511 11.0823H24.5306C27.5441 11.0823 30.0041 13.5301 30.0041 16.5313V24.6001C30.0041 27.6013 27.5441 30.049 24.5306 30.049H16.511C13.4975 30.049 11.0374 27.6013 11.0374 24.6001V16.5313C11.0374 13.5301 13.4975 11.0823 16.511 11.0823Z" fill="white"/>
                         </svg>
                     </a>
-
-                    <a href="https://www.youtube.com/" target="_blank" class="footer_social_element">
-                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5125 0C31.8285 0 41.0167 9.17584 41.0167 20.5042C41.0167 31.8202 31.8408 41.0084 20.5125 41.0084C9.19644 41.0084 0.00830078 31.8325 0.00830078 20.5042C0.00830078 9.18814 9.18414 0 20.5125 0ZM31.7424 15.9163C31.7424 15.9163 31.521 14.3296 30.8322 13.6408C29.9589 12.7306 28.9749 12.7183 28.5321 12.6691C25.3218 12.4354 20.5125 12.4354 20.5125 12.4354H20.5002C20.5002 12.4354 15.6786 12.4354 12.4806 12.6691C12.0378 12.7183 11.0537 12.7306 10.1804 13.6408C9.49164 14.3296 9.27024 15.9163 9.27024 15.9163C9.27024 15.9163 9.03654 17.7736 9.03654 19.6309V21.3652C9.03654 23.2225 9.27024 25.0798 9.27024 25.0798C9.27024 25.0798 9.49164 26.6665 10.1804 27.3553C11.0537 28.2655 12.1977 28.2409 12.7143 28.3393C14.547 28.5115 20.5125 28.573 20.5125 28.573C20.5125 28.573 25.3341 28.5607 28.5444 28.3393C28.9872 28.2901 29.9712 28.2778 30.8445 27.3676C31.5333 26.6788 31.7547 25.0921 31.7547 25.0921C31.7547 25.0921 31.9884 23.2348 31.9884 21.3775V19.6432C31.9884 17.7859 31.7547 15.9286 31.7547 15.9286L31.7424 15.9163ZM18.1263 23.4808V17.0356L24.3255 20.2705L18.1263 23.4808Z" fill="white"/>
-                        </svg>
-                    </a>
                 </div>
             </div>        
         </div>
     </footer>
+    <script src="js/lib/lazyload.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

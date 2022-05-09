@@ -1194,7 +1194,7 @@ path {
   }
   .full_card .calorie_card_content {
     padding: 2.5vw 2.5vw 12.5vw 2.5vw;
-    max-height: 180vw;
+    max-height: 200vw;
     box-shadow:0 0 4.17vw 1vw  #65ae4545;
 
   }
@@ -2003,7 +2003,6 @@ button.swiper-pagination-bullet {
 }
 .img_container {
   border-radius: 50%;
-  border: 4px solid #65ae45;
   overflow: hidden;
   width: 56px;
   height: 56px;
@@ -2012,10 +2011,16 @@ button.swiper-pagination-bullet {
   height: 56px;
 }
 .name-surname {
+  display: flex;
+  flex-direction: column;
   font-weight: 500;
   font-size: 18px;
   color: #424242;
   margin-left: 15px;
+}
+.name {
+  color: #65ae45;
+  font-weight: 300;
 }
 .review_container-text {
   margin-top: 20px;
@@ -2317,7 +2322,92 @@ button.swiper-pagination-bullet {
     margin-top: 20px;
   }
 }
-
+.footer {
+  margin-top: 100px;
+  background-color: #424242;
+}
+.footer_container {
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+}
+.footer_logo_container {
+  text-decoration: none;
+  align-self: flex-start;
+}
+.footer_logo {
+  width: 175px;
+  height: 64.75px;
+}
+.footer_logo img {
+  width: 100%;
+  height: 100%;
+}
+.footer_items {
+  flex: 1 1 auto;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  line-height: 118%;
+}
+.footer_email {
+  margin-bottom: 10px;
+}
+.footer_phone {
+  text-decoration: none;
+  color: #fff;
+}
+.footer_phone:hover {
+  color: #c4c4c4;
+  text-decoration: underline;
+}
+.footer_copy {
+  margin-top: 10px;
+}
+.footer_social{
+  margin-left: 63px;
+}
+.footer_social_element {
+  text-decoration: none;
+  margin-right: 25px;
+}
+.footer_social_element:hover.footer_social_element svg path {
+  fill: #c4c4c4;
+}
+.footer_social_element:last-child {
+  text-decoration: none;
+  margin-right: 0;
+}
+@media (max-width: 1024px) {
+  .footer_container {
+    padding: 5.859vw 0;
+    display: flex;
+    align-items: center;
+  }
+  .footer_social{
+    margin-left: 6.152vw;
+  }
+  .footer_logo {
+    width: 17.09vw;
+    height: auto;
+  }
+  .footer_items {
+    font-size: 1.563vw;
+  }
+  .footer_email {
+    margin-bottom: 0.977vw;
+  }
+  .footer_copy {
+    margin-top: 0.977vw;
+  }
+  .footer_social_element {
+    margin-right: 2.441vw;
+  }
+  .footer_social_element svg {
+    height: 4.102vw;
+    width: 4.102vw;
+  }
+}
 .iti {
   position: relative;
   display: inline-block;
@@ -2796,91 +2886,6 @@ button.swiper-pagination-bullet {
     color: #424242;
   }
 }
-
-.footer {
-  margin-top: 100px;
-  background-color: #424242;
-}
-.footer_container {
-  padding: 60px 0;
-  display: flex;
-  align-items: center;
-}
-.footer_logo_container {
-  text-decoration: none;
-  align-self: flex-start;
-}
-.footer_logo {
-  width: 175px;
-  height: 64.75px;
-}
-.footer_logo img {
-  width: 100%;
-  height: 100%;
-}
-.footer_items {
-  flex: 1 1 auto;
-  text-align: center;
-  color: #fff;
-  font-size: 16px;
-  line-height: 118%;
-}
-.footer_email {
-  margin-bottom: 10px;
-}
-.footer_phone {
-  text-decoration: none;
-  color: #fff;
-}
-.footer_phone:hover {
-  color: #c4c4c4;
-  text-decoration: underline;
-}
-.footer_copy {
-  margin-top: 10px;
-}
-
-.footer_social{
-  margin-left: 63px;
-}
-.footer_social_element {
-  text-decoration: none;
-  margin-right: 25px;
-}
-.footer_social_element:hover.footer_social_element svg path {
-  fill: #c4c4c4;
-}
-.footer_social_element:last-child {
-  text-decoration: none;
-  margin-right: 0;
-}
-@media (max-width: 1024px) {
-  .footer_container {
-    padding: 5.859vw 0;
-    display: flex;
-    align-items: center;
-  }
-  .footer_logo {
-    width: 17.09vw;
-    height: auto;
-  }
-  .footer_items {
-    font-size: 1.563vw;
-  }
-  .footer_email {
-    margin-bottom: 0.977vw;
-  }
-  .footer_copy {
-    margin-top: 0.977vw;
-  }
-  .footer_social_element {
-    margin-right: 2.441vw;
-  }
-  .footer_social_element svg {
-    height: 4.102vw;
-    width: 4.102vw;
-  }
-}
 @media (max-width: 768px) {
   .footer {
     margin-top: 70px;
@@ -2891,8 +2896,10 @@ button.swiper-pagination-bullet {
     align-items: center;
     flex-direction: column;
   }
+  .footer_social{
+    margin-left: 0;
+  }
   .footer_logo_container {
-    
     align-self: auto;
     margin-bottom: 40px;
   }
@@ -2910,12 +2917,12 @@ button.swiper-pagination-bullet {
   .footer_copy {
     margin-top: 20px;
   }
-  .footer_social{
-    margin-left: 0px;
-  }
   .footer_social_element svg {
     height: 35px;
     width: 35px;
+  }
+  .footer_social_element {
+    margin-right: 20px;
   }
   .footer_social_element:hover.footer_social_element svg {
     height: 42px;

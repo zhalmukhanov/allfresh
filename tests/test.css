@@ -1,0 +1,666 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap);
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  line-height: 1;
+  font-family: Roboto, sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img,
+video {
+  max-width: none;
+  height: auto;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 7%;
+}
+.anchor {
+  position: relative;
+  visibility: hidden;
+}
+@media (max-width: 1024px) {
+  .wrapper {
+    padding: 0 4%;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 425px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+}
+
+
+
+
+  .calorie_cards {
+    margin-top: 40px;
+    display: grid;
+    grid-template-areas: 'el1 el1 el2 el2 el3 el3' 
+                         'el el4 el4 el5 el5 elt';
+    gap: 30px 40px;
+    align-items: start;
+    align-content: end;
+  }
+  
+  .card_container{
+    position: relative;
+    min-height: 360px;
+  }
+  .card_container:nth-child(1),
+  .card_container:nth-child(2),
+  .card_container:nth-child(3){
+    z-index: 2;
+  }
+
+  .card_container:nth-child(1){
+    grid-area: el1;
+  }
+  .card_container:nth-child(2){
+    grid-area: el2;
+  }
+  .card_container:nth-child(3){
+    grid-area: el3;
+  }
+  .card_container:nth-child(4){
+    grid-area: el4;
+  }
+  .card_container:nth-child(5){
+    grid-area: el5;
+  }
+
+  .calorie_card {
+    box-shadow: 0 0 25px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    cursor: pointer;
+
+    background-color: #fff;
+  }
+  .card_1 .card_2 .card_3{
+    z-index: 2;
+  }
+  .calorie_card_top {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7);
+    position: relative;
+  }
+  .calorie_card_img {
+    max-width: 100%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .calorie_value {
+    position: absolute;
+    display: inline-block;
+    margin: 15px;
+    z-index: 1;
+    color: #fff;
+    background-color: #65ae45;
+    padding: 7px 13px;
+    font-weight: 500;
+    font-size: 30px;
+  }
+  .calorie_value_L {
+    font-weight: 300;
+    font-size: 25px;
+  }
+  .calorie_card_content {
+    padding: 20px 30px 0 30px;
+    max-height: 90px;
+    overflow: hidden;
+    transition: all 0.5s ease 0s;
+
+    -ms-overflow-style: none; 
+  }
+  .calorie_card_content::-webkit-scrollbar { 
+    width: 0;
+  }
+
+  .full_card{
+    z-index: 3;
+    box-shadow: 0 0 25px 6px #65ae4545;
+  }
+  .full_card .calorie_card_content {
+    padding: 20px 30px 75px 30px;
+    overflow: auto;
+    max-height: 800px;
+    animation: 0.5s delay-overflow;
+  }
+  @keyframes delay-overflow {
+    from {
+      overflow: auto;
+    }
+  }
+  .calorie_text {
+    font-size: 20px;
+    line-height: 115%;
+    color: #424242;
+  }
+  .calorie_info {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 250px;
+  }
+  .calorie_info_element {
+    text-align: center;
+  }
+  .main_info_text {
+    font-weight: 500;
+    font-size: 30px;
+    color: #65ae45;
+  }
+  .info_text {
+    font-weight: 300;
+    font-size: 14px;
+    color: #424242;
+  }
+  .calorie_card_line {
+    margin-top: 20px;
+    height: 1px;
+    width: 100%;
+    background-color: #424242;
+  }
+
+  .calorie_card_line_1{
+    margin-top: 20px;
+    height: 1px;
+    width: 100%;
+    background-color: #42424234;
+  }
+  .calorie_price {
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+  
+    margin-top: 20px;
+    font-size: 23px;
+    color: #424242;
+  }
+  .calorie_price span {
+    font-weight: 700;
+    color: #65ae45;
+  }
+  .price_day {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .price{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .accent_price {
+      background-color: #e4ffd9;
+      border-radius: 5px;
+      padding: 10px;
+      display: inline-block;
+  }
+  .calorie_price_line{
+    height: 1px;
+    flex: 1;
+    margin:0 6px;
+    margin-top: 18px;
+    background-color: #424242;
+  }
+  .calorie_card_bottom {
+    width: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0,
+      rgba(255, 255, 255, 0.78) 40.63%,
+      #fff 100%
+    );
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+  }
+  .full_btn {
+    cursor: pointer;
+    width: 60px;
+    padding: 15px 0 12px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #65ae45;
+  }
+  .full_btn svg {
+    transition: all 0.5s ease 0s;
+    transform: scale(1, -1);
+  }
+  .full_card .full_btn svg {
+    transform: scale(-1, 1);
+  }
+  .calorie_card_bottom_line {
+    width: 100%;
+    height: 3px;
+    background-color: #65ae45;
+  }
+  .full_btn:hover.full_btn svg path {
+    stroke: #d3d3d3;
+  }
+  @media (max-width: 1024px) {
+    .card_container{
+      min-height: 36.13vw;
+    }
+    .calorie_cards{
+      margin-top: 3.91vw;
+      gap: 2.9vw 3.9vw;
+    }
+    .calorie_card {
+      box-shadow: 0 0 2.44vw 0.59vw rgba(0, 0, 0, 0.1);
+    }
+
+    .calorie_card_top {
+      height: 24.41vw;
+    }
+    .calorie_value {
+      margin: 1.46vw;
+      padding: 0.68vw 1.27vw;
+      font-size: 2.93vw;
+    }
+    .calorie_value_L {
+      font-size: 2.44vw;
+    }
+    .calorie_card_content {
+      padding: 1.95vw 2.93vw 0 2.93vw;
+      max-height: 8.79vw;
+    }
+    .full_card .calorie_card_content {
+      padding: 1.95vw 2.93vw 7.32vw 2.93vw;
+      max-height: 100vw;
+      box-shadow:0 0 2.44vw 0.59vw #65ae4545;
+    }
+    .calorie_text {
+      font-size: 1.95vw;
+    }
+    .calorie_info {
+      margin-top: 1.95vw;
+      max-width: 24.4vw;
+    }
+    .main_info_text {
+      font-size: 2.93vw;
+    }
+    .info_text {
+      font-size: 1.37vw;
+    }
+    .calorie_card_line {
+      margin-top: 1.95vw;
+    }
+    .calorie_price {
+      margin-top: 1.95vw;
+      font-size: 2.44vw;
+    }
+    .calorie_card_bottom {
+      height: 6.84vw;
+    }
+    .full_btn {
+      width: 5.86vw;
+      padding: 1.46vw 0 1.17vw 0;
+    }
+    .calorie_card_bottom_line {
+      height: 0.29vw;
+    }
+  }
+  @media (max-width: 768px) {
+    .calorie_cards {
+      margin-top: 40px;
+      display: grid;
+      grid-template-areas: 'el1 el1 el2 el2' 
+                           'el3 el3 el4 el4'
+                           'el  el5 el5 elt';
+      gap: 40px 30px;
+      align-items: start;
+    }
+    .card_container {
+      height: 290px;
+    }
+    .card_container:nth-child(1),
+    .card_container:nth-child(2){
+      z-index: 3;
+    }
+    .card_container:nth-child(3),
+    .card_container:nth-child(4){
+      z-index: 2;
+    }
+    .calorie_card {
+      box-shadow: 0 0 25px 6px rgba(0, 0, 0, 0.1);
+    }
+    .calorie_card_top {
+      height: 200px;
+    }
+    .calorie_card_img {
+      max-width: 100%;
+    }
+    .calorie_value {
+      text-align: center;
+      margin: 10px;
+      padding: 7px 13px;
+      font-size: 28px;
+    }
+    .calorie_value_L {
+      font-size: 23px;
+    }
+    .calorie_card_content {
+      padding: 15px 15px 0 15px;
+      max-height: 90px;
+    }
+    .full_card .calorie_card_content {
+      padding: 15px 15px 75px 15px;
+      max-height: 800px;
+      box-shadow:0 0 25px 6px #65ae4545;
+    }
+    .calorie_text {
+      font-size: 18px;
+    }
+    .calorie_info {
+      margin-top: 18px;
+      max-width: 250px;
+    }
+    .main_info_text {
+      font-size: 28px;
+    }
+    .info_text {
+      font-size: 13px;
+    }
+    .calorie_card_line {
+      margin-top: 18px;
+    }
+    .calorie_price {
+      margin-top: 18px;
+      font-size: 23px;
+    }
+    .calorie_card_bottom {
+      height: 70px;
+    }
+    .full_btn {
+      width: 60px;
+      padding: 13px 0 10px 0;
+    }
+  }
+  @media (max-width: 600px) {
+    .calorie_cards {
+      gap: 5vw 5vw;
+      align-items: start;
+    }
+    .card_container {
+      height: 51vw;
+    }
+    .calorie_card {
+      max-width: 53.33vw;
+      box-shadow: 0 0 4.17vw 1vw rgba(0, 0, 0, 0.1);
+    }
+    .calorie_card_top {
+      height: 33.33vw;
+    }
+    .calorie_value {
+      margin: 1.6vw;
+      padding: 1.17vw 2.17vw;
+      font-size: 4.4vw;
+    }
+    .calorie_value_L {
+      font-size: 3.8vw;
+    }
+    .calorie_card_content {
+      padding: 2.5vw 2.5vw 0 2.5vw;
+      max-height: 15vw;
+    }
+    .full_card .calorie_card_content {
+      padding: 2.5vw 2.5vw 12.5vw 2.5vw;
+      max-height: 133vw;
+      box-shadow:0 0 4.17vw 1vw  #65ae4545;
+
+    }
+    .calorie_text {
+      font-size: 3vw;
+    }
+    .calorie_info {
+      margin-top: 3vw;
+      max-width: 41.67vw;
+    }
+    .main_info_text {
+      font-size: 4.67vw;
+    }
+    .info_text {
+      font-size: 2.17vw;
+    }
+    .calorie_card_line {
+      margin-top: 3vw;
+    }
+    .calorie_price {
+      margin-top: 3vw;
+      font-size: 3.83vw;
+    }
+    .calorie_card_bottom {
+      height: 11.67vw;
+    }
+    .full_btn {
+      width: 10vw;
+      padding: 2.17vw 0 1.67vw 0;
+    }
+    .full_btn svg {
+      height: 2.83vw;
+    }
+  }
+  @media (max-width: 320px) {
+    .calorie_cards {
+      margin-top: 40px;
+      display: grid;
+      grid-template-areas: 'el1' 'el2' 'el3' 'el4' 'el5';
+      gap: 40px 30px;
+      align-items: start;
+    }
+    .card_container {
+      min-height: 310px;
+      position: relative;
+    }
+    .card_container:nth-child(1){
+      z-index: 5;
+    }
+    .card_container:nth-child(2){
+      z-index: 4;
+    }
+    .card_container:nth-child(3){
+      z-index: 3;
+    }
+    .card_container:nth-child(4){
+      z-index: 2;
+    }
+    .calorie_card {
+      max-width: 370px;
+      box-shadow: 0 0 25px 6px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+    .full_card{
+      z-index: 5;
+    }
+    .calorie_card_top {
+      height: 200px;
+    }
+    .calorie_value {
+      margin: 10px;
+      padding: 7px 13px;
+      font-size: 25px;
+    }
+    .calorie_value_L {
+      font-size: 23px;
+    }
+    .calorie_card_content {
+      padding: 20px 20px 0 20px;
+      max-height: 90px;
+    }
+    .full_card .calorie_card_content {
+      padding: 20px 20px 75px 20px;
+      max-height: 800px;
+      box-shadow: 0 0 25px 6px  #65ae4545;
+
+    }
+    .calorie_text {
+      font-size: 17px;
+    }
+    .calorie_info {
+      margin-top: 17px;
+      max-width: 250px;
+    }
+    .main_info_text {
+      font-size: 25px;
+    }
+    .info_text {
+      font-size: 12px;
+    }
+    .calorie_card_line {
+      margin-top: 17px;
+    }
+    .calorie_price {
+      margin-top: 17px;
+      font-size: 22px;
+    }
+    .calorie_card_bottom {
+      height: 70px;
+    }
+    .full_btn {
+      width: 60px;
+      padding: 15px 0 12px 0;
+    }
+    .calorie_card_bottom_line {
+      height: 3px;
+    }
+  }
